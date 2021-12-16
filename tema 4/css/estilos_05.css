@@ -27,17 +27,25 @@ body{
 #container nav p{
 	font-size: 35px;
 }
-#container aside{
+#container #container_01 aside{
+	display: flex;
 	background-color: royalblue;
 	flex-basis: 20%;
 	color: whitesmoke;
 	flex-shrink: 1;
 	flex-direction: column;
 
-}
 
-#container main{
-	flex-basis: 45%;
+}
+#container #container_01 aside img{
+	width: 80%;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 25px;
+	border-radius: 20px;
+}
+#container #container_01 main{
+	flex-basis: 55%;
 	background-color: whitesmoke;
 	flex-shrink: 1;
 }
@@ -46,4 +54,18 @@ p{
 }
 h1{
 	font-size: 35px;
+}
+#container_01{
+	flex-wrap: nowrap;
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-between;
+}
+#container footer{
+	margin-top: 25px;
+	background-color: lightgreen;
+	flex-basis: 100%;
+}
+#grande{
+	font-size: 75px;
 }
