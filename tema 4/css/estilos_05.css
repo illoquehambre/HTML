@@ -59,10 +59,10 @@ h1{
 	flex-wrap: nowrap;
 	display: flex;
 	flex-basis: 100%;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 #container footer{
-	margin-top: 25px;
+
 	background-color: lightgreen;
 	flex-basis: 100%;
 }
