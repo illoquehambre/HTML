@@ -1,0 +1,22 @@
+p{
+	border: 2px solid black;
+}
+.container{
+	border: 2px solid black;
+	display: flex;
+	width: 50%;
+	flex-direction: rows;
+}
+
+#p3{
+	/flex-grow: 1;
+	flex-basis: 25%;
+}
+#p2{
+	flex-grow: 2;
+	flex-basis: 34%;
+}
+#p1{
+	flex-grow: 2;
+	flex-basis: 5%;
+}

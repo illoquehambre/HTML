@@ -1,0 +1,49 @@
+body{
+	justify-content: center;
+	background-color: royalblue;
+}
+#container{
+	width: 100%;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+#container header{
+	background-color: royalblue;
+	text-align: center;
+	color: whitesmoke;
+	flex-basis: 100%;
+}
+#container header h1{
+	font-size: 65px;
+}
+
+#container nav{
+	background-color: lightgreen;
+	text-align: center;
+	color: whitesmoke;
+	flex-basis: 100%;
+}
+#container nav p{
+	font-size: 35px;
+}
+#container aside{
+	background-color: royalblue;
+	flex-basis: 20%;
+	color: whitesmoke;
+	flex-shrink: 1;
+	flex-direction: column;
+
+}
+
+#container main{
+	flex-basis: 45%;
+	background-color: whitesmoke;
+	flex-shrink: 1;
+}
+p{
+	font-size: 25px;
+}
+h1{
+	font-size: 35px;
+}

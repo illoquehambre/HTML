@@ -1,0 +1,28 @@
+
+body{
+	display: flex;
+	justify-content: center;
+}
+main{
+	width: 800px;
+	height: 565px;
+	background-image: url(../img/fondo_jovenes.png), url(../img/fondo_trama.png);
+	background-size: 70%, 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	border-radius: 50px;
+	border: whitesmoke;
+	border-width: 0px;
+}
+p{
+	margin-top: 70px;
+	margin-right: 50px;
+	margin-left: 50px;
+	text-align: center;
+	font-family: 'Kristen ITC', 'Berlin Sans FB',  Arial;
+	font-size: 35pt;
+	color: whitesmoke;
+	font-variant: small-caps;
+	font-family: 'Kristen ITC', 'Berlin Sans FB', Arial;
+
+}

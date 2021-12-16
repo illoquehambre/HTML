@@ -1,0 +1,36 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+
+#container{
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#container header{
+	width: 100%;
+	justify-content: center;
+}
+#container header img{
+	width: 100%;
+	justify-content: center;
+}
+#container nav{
+	width: 25%;
+	flex-direction: column;
+	margin-top: 20px;
+
+}
+#container main{
+	width: 65%;
+	margin-top: 20px;
+
+}
+#container footer{
+	width: 100%;
+	background-image: url(../img/footer.jpg);
+	
+}

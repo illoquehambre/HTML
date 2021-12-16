@@ -1,0 +1,37 @@
+body{
+	display: flex;
+	justify-content: center;
+}
+
+#container{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#container header{
+	width: 100%;
+	justify-content: center;
+}
+#container header img{
+	width: 100%;
+	justify-content: center;
+	border-radius: 25px;
+}
+#container aside{
+	width: 25%;
+	flex-direction: column;
+	margin-top: 75px;
+
+
+}
+#container aside img{
+	border-radius: 20px;
+	border-bottom: 200px;
+}
+#container main{
+	width: 75%;
+	margin-top: 20px;
+
+}

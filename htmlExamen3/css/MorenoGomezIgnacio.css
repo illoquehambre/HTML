@@ -1,0 +1,42 @@
+body{
+	background-color: rgb(225, 225, 225);
+}
+h1{
+	color: rgb(0, 78, 198);
+	font-size: 2.8em;
+	font-family: Calibri,Arial, sans-serif;
+	letter-spacing: 3px;
+	font-weight: lighter;
+}
+@font-face{
+	font-family: "Mohave-Regular";
+	scr: url('../fonts/Mohave-Regular.ttf');
+}
+h2{
+	font-family: Mohave-Regular.ttf, sans-serif ;
+	font-size: 1.4em;
+	color: rgb(114, 114, 114);
+	font-weight: lighter;
+
+}
+p{
+	font-family: Helvética, Georgia, 'Times New Roman', serif;
+	font-size: 0.9em;
+	color: rgb(102, 102, 102);
+
+}
+#centradoImagen{
+	text-align: center;
+}
+
+#fecha{
+	text-align: right;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: rgb(142, 142, 142);
+	letter-spacing: 0.005px;
+	font-variant: small-caps;
+}
+span{
+	font-weight: bolder;
+}

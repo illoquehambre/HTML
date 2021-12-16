@@ -1,0 +1,18 @@
+body{
+	font-family: 'Comic sans', 'Trebuchet MS', Arial, sans-serif;
+}	
+h3{
+	font-variant: small-caps;
+	font-family: Impact;
+	font-size: x-large;
+}
+h1{
+	font-family: Impact;
+	text-align: center;
+	font-size: 45px;
+
+}
+p{
+	font-family: 'Comic Sans MS', Arial, sans-serif;
+	word-spacing: 11px;
+}
