@@ -1,0 +1,26 @@
+body{
+	background-image: url(../img/pokemon_background.jpg);
+	background-size: contain;
+	background-attachment:fixed ;
+}
+
+body main{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+body main div{
+	border-width: 15px;
+	border-style: solid;
+	border-color: black;
+	margin: 5%;
+	border-radius: 15px;
+	background-color: blueviolet;
+}
+body main div img{
+	width: 100%;
+}
+body main div{
+	color: whitesmoke;
+	font-size: 25px;
+	text-align: center;
