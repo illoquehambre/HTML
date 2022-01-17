@@ -1,0 +1,27 @@
+body{
+	display: flex;
+	widows: 85%;
+	justify-content: center;
+
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+}
+nav ul li{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+
+	flex-grow: 1;
+	background-color: red;
+	border: darkred solid 0px;
+	border-left: solid white 2px;
+	text-align: center;
+	color: white;
+	padding: 5px;
+	
+}
