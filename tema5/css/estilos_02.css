@@ -24,7 +24,7 @@ nav ul li:last-child{
 
 nav ul li{
 	flex-grow: 1;
-	background-color: rgba(75, 75, 75, 0.4);
+	background-image: url(../img/dos_colores.jpg);
 	border: darkred solid 0px;
 	text-align: center;
 	color: white;
@@ -34,5 +34,5 @@ nav ul li{
 	font-size: 20px;	
 }
 nav ul li:hover{
-	background-color: black;
+	background-position: bottom;
 }

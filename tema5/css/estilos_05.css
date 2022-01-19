@@ -5,26 +5,28 @@ body{
 }
 nav{
 		width: 85%;
+
 }
 nav ul{
 	list-style-type: none;
 	display: flex;
+	padding: 0;
+	margin: 0;
 }
 nav ul li:first-child{
 	
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
+	border-top-left-radius: 10%;
 	
 
 }
 nav ul li:last-child{
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
+	border-top-right-radius: 10%;
+
 }
 
 nav ul li{
 	flex-grow: 1;
-	background-color: rgba(75, 75, 75, 0.4);
+	background-image: url(../img/dos_colores.jpg);
 	border: darkred solid 0px;
 	text-align: center;
 	color: white;
@@ -34,5 +36,10 @@ nav ul li{
 	font-size: 20px;	
 }
 nav ul li:hover{
-	background-color: black;
+	background-position: bottom;
+}
+main{
+	width: 85%;
+	background-image: url(../img/dos_colores.jpg);
+	background-position: bottom;
 }
