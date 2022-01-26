@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			box-sizing: content-box;
+		}
+		body{
+			background-image: linear-gradient(to right, #c4a1c3, #33CCC2);
+		}
+		nav{
+			width:75%;
+		}
+		nav ul{
+			display: flex;
+			padding-left: 0;
+			list-style-type:none;
+		}
+
+		nav ul li{
+			border:1px black solid;
+			flex-grow: 1;
+			height: 50px;
+			text-align: center;
+			margin: 0px;
+			background-color: #7AA189;
+			color: white;
+		}
+		nav ul li ul{
+			display: block;
+		}
+		nav ul li ul li{
+
+			height:0px; 
+			padding: 0px;
+			border-width: 0px;
+			overflow: hidden;
+			color: black;
+			transition: height 0.5s, border-width 0.5s;
+		}
+		nav ul li:hover{
+			background-image: linear-gradient(to right, #a2e1c7, #33CCC2);
+			overflow: inherit;
+			height: 50px;
+			padding: 1;
+		}
+
+		nav ul li:hover ul li{
+
+			height: 40px;
+			border-width: 1px;
+			background-color: white;
+			
+		}
+		nav ul li ul li:first-child{
+			margin-top: 33px;
+		}
+		nav ul li:hover ul li:first-child{
+			margin-top: 33px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Portfolio
+				<ul>
+					<li>Sub-Menu 1</li>
+					<li>Level 3 Menu</li>
+				</ul>
+			</li>
+			<li>Blog</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+
+</body>
+</html>

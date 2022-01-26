@@ -1,0 +1,22 @@
+nav ul{
+			display: flex;
+			margin-top: 40px;
+		}
+		nav ul li{
+			list-style-type: none;
+			background-image: url(../Imagen/black.png);
+			height: 40px;
+			width: 100px;
+			padding: 5px;
+			padding-top: 20px;
+			color: white;
+			text-align: center;
+			transition-duration: 0.3s;
+		}
+		nav ul li:hover{
+			padding-top: 20px;
+			padding-bottom: 10px;
+			background-image: linear-gradient(to bottom, #9b1c26 95%, #000000 5%);
+			
+
+		}

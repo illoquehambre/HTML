@@ -1,0 +1,36 @@
+
+		body{
+			background-color: grey;
+		}
+		nav ul{
+			display: flex;
+			position: center;
+			
+		}
+		nav ul li{
+			width: 100px;
+			padding: 19px 14px 19px 14px;
+			background-color: #333333;
+			text-align: center;
+			list-style-type: none;
+			color: white;
+
+		}
+		nav ul li:hover{
+			background-position: bottom;
+
+		}
+		a{
+			text-decoration: none;
+		}
+		#Mac{
+			background-image: url(../Imagen/Mac1.png);
+
+		}
+		#Lupa{
+			background-image: url(../Imagen/Lupa1.png);
+
+		}
+		#Bag{
+			background-image: url(../Imagen/Bag1.png);
+		}

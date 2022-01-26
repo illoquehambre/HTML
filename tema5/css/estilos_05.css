@@ -50,10 +50,11 @@ nav ul li:hover{
 main article h1:target{
 	background-color: white;
 	display: inherit;
+	display: inherit;
 
 }
 main article:target {
-	display: inherit;
+	
 	border:red solid;
 	border-width: 0px 2px 2px;
 }
