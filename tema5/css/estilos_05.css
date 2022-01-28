@@ -2,9 +2,7 @@
 #envoltorio{
 	width: 85%;
 }
-*{
-	box-sizing: content-box;
-}
+
 body{
 	justify-content: center;
 	display: flex;
@@ -53,11 +51,7 @@ main article h1:target{
 	display: inherit;
 
 }
-main article:target {
-	
-	border:red solid;
-	border-width: 0px 2px 2px;
-}
+
 nav ul a:last-child {
 	margin-right: 0px;
 }
