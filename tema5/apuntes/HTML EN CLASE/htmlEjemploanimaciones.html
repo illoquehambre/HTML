@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animaciones</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		@keyframes animaCaja{
+				2%{
+					width: 200px;
+					background-color: red;
+
+				}
+				25%{
+					width: 50%;
+					background-color: yellow;
+
+				}
+				57%{
+					width: 120px;
+					background-color: blue;
+
+				}
+				100%{
+					width: 70%;
+					background-color: green;
+				}
+			}
+		body{
+
+		}
+		div {
+			width: 200px;
+			height: 100px;
+			margin-left: 100px
+			background-color:red;
+			color: white;
+			flex-wrap: wrap;
+			animation:animaCaja 5s alternate infinite paused;
+			animation-fill-mode: forwards;
+		}
+		div:hover{
+			animation-play-state: running;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>hola</p>
+	</div>
+</body>
+</html>
