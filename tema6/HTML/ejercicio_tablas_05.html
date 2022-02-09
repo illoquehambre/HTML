@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 5</title>
+	<style type="text/css">
+		table{
+			margin: auto;
+
+			text-align: center;
+		}
+		td{
+			width: 75px;
+			height: 75px;
+		}
+		tr:nth-child(even)>td:nth-child(odd) {
+			background-color: rgb(128, 93, 19);
+			font-size: 250%;
+		}
+		tr:nth-child(odd)>td:nth-child(even) {
+			background-color: rgb(128, 93, 19);
+			font-size: 250%;
+		}
+		tr:nth-child(even)>td:nth-child(even) {
+			background-color: rgb(217, 189, 128);
+			font-size: 250%;
+		}
+		tr:nth-child(odd)>td:nth-child(odd) {
+			background-color: rgb(217, 189, 128);
+			font-size: 250%;
+		}
+
+
+		tr:first-child >td:nth-child(odd){
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:first-child>td:nth-child(even){
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:last-child >td:nth-child(odd){
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:last-child>td:nth-child(even){
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+
+
+		tr:nth-child(odd) >td:first-child{
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:nth-child(even)>td:first-child{
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:nth-child(odd) >td:last-child{
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		tr:nth-child(even)>td:last-child{
+			background-color: white;
+			width: 25px;
+			height: 25px;
+			font-size: inherit;
+			color: black;
+		}
+		caption{
+			font-size: 350%;
+			color: darkblue;
+			background-image: linear-gradient(90deg, lightblue, brown);
+			padding: 15px;
+		}
+		tr>td:nth-child(8){
+			color: white;
+		}
+		tr>td:nth-child(9){
+			color: white;
+		}
+		
+	</style>
+</head>
+<body>
+	<table summary="CHESS">
+		<caption>BEST-CHESS</caption>
+		<thead></thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td>8</td>
+				<td>7</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>♜</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♜</td>
+				<td>a</td>
+			</tr>
+			<tr>
+				<td>b</td>
+				<td>♞</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♞</td>
+				<td>b</td>
+			</tr>
+			<tr>
+				<td>c</td>
+				<td>♝</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♝</td>
+				<td>c</td>
+			</tr>
+			<tr>
+				<td>d</td>
+				<td>♛</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♛</td>
+				<td>d</td>
+			</tr>
+			<tr>
+				<td>e</td>
+				<td>♚</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♚</td>
+				<td>e</td>
+			</tr>
+			<tr>
+				<td>f</td>
+				<td>♝</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♝</td>
+				<td>f</td>
+			</tr>
+			<tr>
+				<td>g</td>
+				<td>♞</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♞</td>
+				<td>g</td>
+			</tr>
+			<tr>
+				<td>h</td>
+				<td>♜</td>
+				<td>♟</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>♟</td>
+				<td>♜</td>
+				<td>h</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>8</td>
+				<td>7</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td></td>
+			</tr>	
+		</tbody>
+	</table>
+</body>
+</html>
