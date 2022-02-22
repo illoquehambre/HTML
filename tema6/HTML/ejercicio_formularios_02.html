@@ -6,61 +6,88 @@
 	<style type="text/css">
 		form{
 			margin: auto;
-			display: flex;
-			flex-wrap: wrap;
-			width: 145px;
+
 			margin-top: 50px;
 		}
-		label{
-			flex-direction: column;
+		.flex{
+			display: flex;
+		}
+		fieldset>div{
+			padding-left: 20px;
 		}
 		input{
+
 			background-color: skyblue;
 			color: white;
 		}
 		input:focus{
 			background-color: darkblue;
 		}
+		.envio{
+			background-color: transparent;
+		}
+		.envio:focus{
+			background-color: transparent;
+		}
 	</style>
 </head>
 <body>
 	<form name="formulario" autocomplete="true">
-		<label for="nombre">Nombre:</label>
-		<input type="text" name="nombre">
+		<fieldset>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre">
 
-		<label for="apellidos">Apellidos:</label>
-		<input type="text" name="apellidos">
+			<label for="apellido1">1º Apellido:</label>
+			<input type="text" name="apellido1">
 
-		<label for="email">Email:</label>
-		<input type="text" name="email">
+			<label for="apellido2">2º Apellido:</label>
+			<input type="text" name="apellido2">
+		</fieldset>
+		<fieldset>
+			<label for="email">Email:</label>
+			<input type="text" name="email">
+		</fieldset>
+		
 
-		<label for="user">Nombre Usuario:</label>
-		<input type="text" name="user">
+		
+		<fieldset>
+			<label for="user">Nombre Usuario:</label>
+			<input type="text" name="user">
 
-		<label for="contrasenia">Contraseña:</label>
-		<input type="text" name="contrasenia">
+			<label for="contrasenia">Contraseña:</label>
+			<input type="text" name="contrasenia">
 
-		<label for="contrasenia2">Repetir Contraseña:</label>
-		<input type="text" name="contrasenia2">
-
-		<label for="sexo">Sexo（　ﾟДﾟ）:</label>
-		<input type="text" name="sexo">
-
-		<label for="aficiones">Aficioness:</label>
-		<select name="aficiones">
-			<option value="dep">Deporte</option>
-			<option value="vj">VideoJuegos</option>
-			<option value="lec">Lectura</option>
-			<option value="anim">Animales</option>
-			<option value="mus">Música</option>
-			<option value="sex">Sexo (╯°Д°）╯</option>
-			<option value="cin">Cine</option>
-			<option value="bbdd"selected>Boletines de BBDD ಥ_ಥ</option>
-			<option value="dor">Dormir °‿‿°</option>
-			<option value="inf">Informática</option>
-			<option value="serv">Beber servesa ┬─┬⃰͡ (ᵔᵕᵔ͜ )</option>
-			<option value="ole">Mi andalusía bonica ԅ(≖‿≖ԅ) </option>
-
+			<label for="contrasenia2">Repetir Contraseña:</label>
+			<input type="text" name="contrasenia2">
+		</fieldset>
+		<fieldset>
+			<label for="sexo">Sexo（　ﾟДﾟ）:</label><br>
+			<input type="radio" name="sexo" value="H">Hombre<br>
+			<input type="radio" name="sexo" value="M">Mujer<br>
+			<input type="radio" name="sexo" value="X">Helicóptero Apache de Combate<br>
+		</fieldset>
+		<fieldset class="flex">
+			<label for="aficiones">Aficioness:</label><br>
+			<div>
+				<input type="checkbox" name="Aficiones" value="dep">Deporte<br>
+				<input type="checkbox" name="Aficiones" value="vj">VideoJuegos<br>
+				<input type="checkbox" name="Aficiones" value="lec">Lectura<br>
+				<input type="checkbox" name="Aficiones" value="anim">Animales<br>
+			</div>
+			<div>
+				<input type="checkbox" name="Aficiones" value="mus">Música<br>
+				<input type="checkbox" name="Aficiones" value="sex">Socializar (╯°Д°）╯<br>
+				<input type="checkbox" name="Aficiones" value="cin">Cine<br>
+				<input type="checkbox" name="Aficiones" value="bbdd" >Boletines de BBDD ಥ_ಥ<br>
+			</div>
+			<div>
+				<input type="checkbox" name="Aficiones" value="dor">Dormir °‿‿°<br>
+				<input type="checkbox" name="Aficiones" value="inf">Informática<br>
+				<input type="checkbox" name="Aficiones" value="serv">Beber servesa ┬─┬⃰͡ (ᵔᵕᵔ͜ )<br>
+				<input type="checkbox" name="Aficiones" value="ole">Mi andalusía bonica ԅ(≖‿≖ԅ) <br>
+			</div>
+		</fieldset>
+		<input type="image" name="enviar" src="../img/boton.png" class="envio" width="10%">
 	</form>
 </body>
 </html>

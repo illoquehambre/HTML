@@ -7,10 +7,17 @@
 		
 		fieldset{
 			display: flex;
+			border-collapse: collapse;
+			margin: 0;
+		}
+		fieldset:hover{
+			background-color: lightyellow;
+			
 		}		
 		fieldset>div{
 			font-size: 75%;
 			padding-left: 20px;
+			
 		}
 		.requerido{
 			color: red;
@@ -28,6 +35,14 @@
 			display: block;
 
 		}
+		.text{
+			width: 10%;
+			font-size: 100%;
+		}
+		input:focus{
+			border: solid 2px yellow;
+		}
+		
 	</style>
 </head>
 <body>
@@ -51,7 +66,7 @@
 		</fieldset> 
 		<fieldset> 
 			<label class="titulo" for="direccion">Dirección <span class="requerido">*</span></label> 
-			<div> 		
+			<div> 	
 				<div>
 					<label for="direccion">Calle, número, piso, puerta</label> <br>
 					<input id="direccion" name="direccion" value="" /> 
@@ -84,28 +99,28 @@
 					</div>					
 				</div> 			
 			</div> 
-			<p class="ayuda">El código postal es imprescindible para poder recibir los pedidos</p> 
+			<div class="text">El código postal es imprescindible para poder recibir los pedidos</div> 
 		</fieldset> 
 		<fieldset> 
 			<label class="titulo" for="email">Email</label> 
 			<div> 
 				<input id="email" name="email" value="" /> 
 			</div> 
-			<p class="ayuda">Asegúrate de que sea váfieldsetdo</p> 
+			
 		</fieldset> 
 		<fieldset> 
 			<label class="titulo" for="telefonofijo">Teléfono <span class="requerido">*</span></label> 
-			<div> 				
-				<input id="telefonofijo" name="telefonofijo" value="" /> 
-				<label for="telefonofijo">Fijo</label> 
-			
-				<input id="telefonomovil" name="telefonomovil" value="" /> 
-				<label for="telefonomovil">Móvil</label> 			
-			</div> 
-			<p class="ayuda">Sin prefijo de país y sin espacios en blanco</p> 
+				<div>
+					<input id="telefonofijo" name="telefonofijo" value="" /> <br>
+					<label for="telefonofijo">Fijo</label> 
+				</div>			
+				<div>
+					<input id="telefonomovil" name="telefonomovil" value="" /><br> 
+					<label for="telefonomovil">Móvil</label> 
+				</div>								
 		</fieldset> 
 		<fieldset> 
-			<input id="alta" type="submit" value="Darme de alta &rarr;" /> 
+			<input id="alta" type="submit" value="Darme de alta" /> 
 		</fieldset> 		
 	</form> 
 </body>

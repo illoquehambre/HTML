@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 8</title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>1º Número Visitantes</legend>
+			<label>Indique el Número de Visitantes</label>
+			<input type="number" name="nHuespedes" id="1" min="1" max="20" step="1">
+		</fieldset>
+
+		<fieldset>
+			<legend>2º Fechas</legend>
+			<label for="entrada">Indique la fecha de entrada</label>
+			<input type="date" name="entrada" id="1" min="2022-02-25" max="2022-12-30"><br>
+			<label for="salida">Indique la fecha de salida</label>
+			<input type="date" name="entrada" id="1" min="2022-02-26" max="2022-12-31">
+		</fieldset>
+
+		<fieldset>
+			<legend>3º Habitaciones</legend>
+			<label for="tipo">Indique el tipo de Habitación que desee</label>
+			<input type="text" name="tipo" id="1" list="opciones">
+			<datalist id="opciones">
+				<option value="Individual"></option>
+				<option value="Doble"></option>
+				<option value="De matrimonio"></option>
+				<option value="Suite"></option>
+				<option value="Estrella de la muerte"></option>
+			</datalist>
+		</fieldset>
+
+		<fieldset>
+			<legend>4º</legend>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="1">
+		</fieldset>
+		<br><input id="alta" type="submit" value="Darme de alta" /> 
+	
+
+	</form>
+
+</body>
+</html>
