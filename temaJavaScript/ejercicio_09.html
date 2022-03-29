@@ -13,7 +13,9 @@
             let resultado= "La cadena tiene mayuscula y minusculas"
             let cadMin=cadena.toLowerCase();
             let cadMay=cadena.toUpperCase();
-            if(cadena===cadMin){
+            if(!isNaN(cadena)){  
+                resultado="Esto no está hecho pa´ números sopenco";
+            }else if(cadena===cadMin){
                 resultado="La cadena solo tiene minúsculas";
             }else if(cadena===cadMay){
                 resultado="La cadena solo tiene mayúsculas"
