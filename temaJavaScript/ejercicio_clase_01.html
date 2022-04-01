@@ -8,26 +8,33 @@
     <script>
         let tam = prompt("Diga el tamaño que desea del array");
         let array=[0];
-        alert(rellenarArray(array, tam));
-        alert(sumarValores(array, tam));
+        alert("Este array contiene los datos: "+rellenarArray(array, tam));
+        alert("La suma de todos los números contenidos en el array es: "+sumarValores(array, tam));
 
         function rellenarArray(array){
             let aux=0;
             let salir=true;
             let conteo=0;
-            do{
-                aux=prompt("Introduzca un dato para la posición "+(conteo+1))
+            do{                
                 if(array.length<tam){
+                    aux=prompt("Introduzca un dato para la posición "+(conteo+1)+" o pulse un número negativo para salir.")
                     if(!isNaN(aux) && aux>=0){
-                    array[conteo]=aux
+                    array[conteo]=+aux
                     conteo++;
                     }else{
-                    alert("No es un número positivo")
-                    salir=false;
+                        alert("No es un número positivo. \n Saliendo...")
+                        salir=false;                        
                     }
                 }else{
-                    alert("Has superado el tamaño")
-                    salir=false;
+                    conteo=array.length;
+                    aux=prompt("Introduzca un dato para la posición "+(conteo)+" o pulse un número negativo para salir."+"\nTenga en cuenta que se borrarán los datos de la primera posición para añadir esta en la última, desplazando así el resto de datos.")
+                    if(!isNaN(aux) && aux>=0){
+                        array.shift();
+                        array.push(+aux);
+                    }else{
+                        alert("No es un número positivo. \nSaliendo...")
+                        salir=false;
+                    }
                 }
                
             }while(salir);
