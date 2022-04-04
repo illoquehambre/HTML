@@ -9,9 +9,9 @@
         let tam = prompt("Diga el tamaño que desea del array");
         let array=[0];
         alert("Este array contiene los datos: "+rellenarArray(array, tam));
-        alert("La suma de todos los números contenidos en el array es: "+sumarValores(array, tam));
+        alert("La suma de todos los números contenidos en el array es: "+sumarValores(array));
 
-        function rellenarArray(array){
+        function rellenarArray(array, tam){
             let aux=0;
             let salir=true;
             let conteo=0;
@@ -41,7 +41,7 @@
             return array;
         }
 
-        function sumarValores(arrayS){
+        function sumarValores(array){
             let sum=0;
            for (let aux of array) {
                 sum+=aux;

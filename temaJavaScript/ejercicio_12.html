@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        let cad=[2,4,6,34,98,56,31,7,3,19,99]
+        alert(orden(cad));
+    
+
+        function orden(array){
+            let aux=[];
+            let tam=array.length;
+            let max=0;
+            let pos;
+
+            do{
+                for(let i=0;i<array.length;i++){
+                    if(max<array[i]){
+                        max=array[i]
+                        pos=i;
+                    }
+                }
+                array.delete(pos);//falla
+                aux.push(max)
+            }while(aux.length!=tam)
+           return aux;
+        }    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
