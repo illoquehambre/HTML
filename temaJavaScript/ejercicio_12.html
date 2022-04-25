@@ -15,16 +15,17 @@
             let aux=[];
             let tam=array.length;
             let max=0;
-            let pos;
+            let pos;    
 
             do{
+                max=0;
                 for(let i=0;i<array.length;i++){
                     if(max<array[i]){
                         max=array[i]
                         pos=i;
                     }
-                }
-                array.delete(pos);//falla
+                }   
+                array.splice(pos, 1);//falla
                 aux.push(max)
             }while(aux.length!=tam)
            return aux;
