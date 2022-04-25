@@ -9,11 +9,11 @@
     <script>
        let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B',
         'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'];
-        let incorrecto=false;
+        let incorrecto=true;
         do{
             let num= prompt("Por favor introduzca el numero del DNI sin letra");
-            let letra = prompt("Por favor indique su letra del DNI en mayúsculas").toUpperCase();
-
+            let letra = prompt("Por favor indique su letra del DNI").toUpperCase();
+            alert(comprobarLetraDNI(num, letra))
             
         }while (incorrecto) {
             
