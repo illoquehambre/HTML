@@ -12,41 +12,43 @@
 
 </head>
 
-<body>
+<body class="container d-flex align-items-center">
 
-    <form class="w-100 d-flex flex-column align-items-center was-validated container py-4">
-        <div>
-
-        
-            <div class="d-flex mb-1 w-100 w-lg-50 input-group form-floating">
-                <span class="input-group-text text-success">Nombre</span>
-                <input class="  bg-light text-secondary " type="text"
-                    placeholder="Nombre" name="name" id="name" required>
+        <form class="w-75 d-flex flex-column align-items-center was-validated container py-2 bg-success mt-5 >
+            <div class="align-items-center">
+    
+            
+                <div class="d-flex mb-1 w-100 w-lg-50 input-group form-floating my-5">
+                    <span class="input-group-text text-success">Nombre</span>
+                    <input class="  bg-light text-secondary " type="text"
+                        placeholder="Nombre" name="name" id="name" required>
+                </div>
+    
+                <div class="d-flex mb-1 w-100 w-lg-50 input-group align-content-between my-5">
+                    <span class="input-group-text text-success">Precio</span>
+                    <input class="  bg-light text-secondary " type="text"
+                        placeholder="Precio" name="precio" id="precio" required>
+                </div>
+    
+                <div class="d-flex mb-1 w-100 w-lg-50 input-group align-content-between my-5">
+                    <span class="input-group-text text-success">Cantidad Disponible</span>
+                    <input class="  bg-light text-secondary " type="text"
+                        placeholder="Cantidad Disponible" name="cantidad" id="cantidad" required>
+                </div>
+    
+            
+    
+                <div class="d-flex mb-1 w-100 w-lg-50   input-group align-content-between my-5">
+                    <span class="input-group-text text-success">Categoria</span>
+                    <input class="  bg-light text-secondary " type="text"
+                        placeholder="Categoria" name="name" id="name" required>
+                </div>
+    
             </div>
+    
+        </form>
 
-            <div class="d-flex mb-1 w-100 w-lg-50 input-group align-content-between">
-                <span class="input-group-text text-success">Precio</span>
-                <input class="  bg-light text-secondary " type="text"
-                    placeholder="Precio" name="precio" id="precio" required>
-            </div>
-
-            <div class="d-flex mb-1 w-100 w-lg-50 input-group align-content-between">
-                <span class="input-group-text text-success">Cantidad Disponible</span>
-                <input class="  bg-light text-secondary " type="text"
-                    placeholder="Cantidad Disponible" name="cantidad" id="cantidad" required>
-            </div>
-
-        
-
-            <div class="d-flex mb-1 w-100 w-lg-50   input-group align-content-between">
-                <span class="input-group-text text-success">Categoria</span>
-                <input class="  bg-light text-secondary " type="text"
-                    placeholder="Categoria" name="name" id="name" required>
-            </div>
-
-        </div>
-
-    </form>
+    
 
 
 </body>
